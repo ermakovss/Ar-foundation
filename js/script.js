@@ -21,3 +21,19 @@ pc_btn.addEventListener("click", function(){
     alert("На персональном компьютере/ноутбуке дополненная реальность не работает, пожалуйста, перейдите на сайт с мобильного устройства");
   	}
 });
+
+
+const acc = document.querySelector('.accordion_btn');
+const acc_info = document.querySelector('.accordion_info');
+const acc_target = document.querySelector('.accordion_target')
+
+acc.addEventListener('click', function(){
+  acc_info.classList.toggle('is-active');
+  acc.classList.toggle('is-active');
+  acc_target.classList.toggle('is-active');
+});
+
+
+
+
+
